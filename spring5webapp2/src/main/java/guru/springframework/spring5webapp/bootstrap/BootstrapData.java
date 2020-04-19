@@ -24,36 +24,44 @@ public class BootstrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+
+        System.out.println("Started in Bootsrtap");
+        // Publisher data
+        Publisher publisher = new Publisher();
+        publisher.setName("SFG Publishing");
+        publisher.setCity("St Petersburg");
+        publisher.setState("FL");
+        publisherRepository.save(publisher);
+
+        System.out.println("Number of publisher: " + publisherRepository.count());
+
         Author eric = new Author("Eric", "Evans");
         Book ddd = new Book("Domain Driven Design", "432hj");
-
         eric.getBooks().add(ddd);
         ddd.getAuthors().add(eric);
 
+        //New line for the publisher ontToMany
+        ddd.setPublisher(publisher);
+        publisher.getBooks().add(ddd);
+
         authorRepository.save(eric);
         bookRepository.save(ddd);
+        publisherRepository.save(publisher);
 
         Author rod = new Author("Rod", "Johnson");
         Book noEJB = new Book("J2EE Development without EJB", "12343");
         rod.getBooks().add(noEJB);
         noEJB.getAuthors().add(rod);
 
+        noEJB.setPublisher(publisher);
+        publisher.getBooks().add(noEJB);
+
         authorRepository.save(rod);
         bookRepository.save(noEJB);
+        publisherRepository.save(publisher);
 
-        System.out.println("Started in Bootsrtap");
         System.out.println("Number of books: " + bookRepository.count());
-
-//        Publisher: response
-        Publisher publisher1 = new Publisher("F", "Route oasis 14", "Oregon", "Pss", "1200");
-        Publisher publisher2 = new Publisher("J", "Path window 32", "Oregon", "Pso", "1240");
-        Publisher publisher3 = new Publisher("K", "Av. Paradise 199", "Kansas", "Psa", "1400");
-        publisherRepository.save(publisher1);
-        publisherRepository.save(publisher2);
-        publisherRepository.save(publisher3);
-
-        System.out.println("Started in Bootsrtap with publisher");
-        System.out.println("Number of publisher: " + publisherRepository.count());
+        System.out.println("Number of publisher of books: " + publisher.getBooks().size());
 
     }
 }
