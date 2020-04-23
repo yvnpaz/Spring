@@ -33,8 +33,6 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
-                    <localCheckout>true</localCheckout>
-                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
         </plugins>
@@ -42,7 +40,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:yvnpaz/Spring/pet-clinic.git</developerConnection>
-      <tag>HEAD</tag>
   </scm>
 
 </project>
