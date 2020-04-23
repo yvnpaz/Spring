@@ -14,7 +14,7 @@
     </parent>
     <groupId>guru.springframework</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.8</version>
+    <version>0.0.9-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Demo Pet clinic Spring</description>
 
@@ -41,7 +41,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/yvnpaz/Spring.git</developerConnection>
-      <tag>pet-clinic-0.0.8</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
