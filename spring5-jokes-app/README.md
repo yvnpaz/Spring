@@ -1,3 +1,6 @@
+# Spring Boot Jokes App
+This Spring Boot web application displays a random Chuck Norris Joke on the index.
+
 # Getting Started
 
 ### Reference Documentation
@@ -15,6 +18,3 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 * [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
-
-#Spring Boot Jokes App
-This Spring Boot web application displays a random Chuck Norris Joke on the index.
