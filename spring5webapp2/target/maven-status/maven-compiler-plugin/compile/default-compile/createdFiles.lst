@@ -1,0 +1,10 @@
+guru\springframework\spring5webapp\domain\Publisher.class
+guru\springframework\spring5webapp\bootstrap\BootstrapData.class
+guru\springframework\spring5webapp\domain\Author.class
+guru\springframework\spring5webapp\repositories\PublisherRepository.class
+guru\springframework\spring5webapp\controllers\BookController.class
+guru\springframework\spring5webapp\repositories\AuthorRepository.class
+guru\springframework\spring5webapp\controllers\AuthorController.class
+guru\springframework\spring5webapp\domain\Book.class
+guru\springframework\spring5webapp\repositories\BookRepository.class
+guru\springframework\spring5webapp\Spring5webappApplication.class
