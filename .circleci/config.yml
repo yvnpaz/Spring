@@ -38,4 +38,4 @@ jobs:
           key: pet-clinic-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: mvn install
+      - run: mvn integration-test
