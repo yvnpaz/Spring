@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - checkout:
-        path: ~/pet-clinic
+          path: ~/pet-clinic
 
       # Download and cache dependencies
       - restore_cache:
