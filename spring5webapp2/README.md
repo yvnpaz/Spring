@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/yvnpaz/Spring.svg?style=svg)](https://circleci.com/gh/yvnpaz/Spring)
+
 # Spring Framework 5: Beginner to Guru
 
 This repository is for an example application built in my [Spring Framework 5 - Beginner to Guru](https://www.udemy.com/testing-spring-boot-beginner-to-guru/?couponCode=GITHUB_REPO) online course
