@@ -32,10 +32,5 @@ jobs:
 
       - run: mvn dependency:go-offline
 
-      - save_cache:
-          paths:
-            - ~/.m2
-          key: pet-clinic-{{ checksum "pom.xml" }}
-
       # run tests!
       - run: mvn install
