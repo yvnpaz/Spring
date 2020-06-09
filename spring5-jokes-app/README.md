@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/yvnpaz/Spring.svg?style=svg)](https://circleci.com/gh/yvnpaz/Spring)
+
 # Spring Boot Jokes App
 This Spring Boot web application displays a random Chuck Norris Joke on the index.
 
