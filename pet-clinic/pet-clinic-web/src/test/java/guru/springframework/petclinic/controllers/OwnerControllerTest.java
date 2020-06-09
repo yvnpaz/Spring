@@ -37,7 +37,7 @@ class OwnerControllerTest {
         owners = new HashSet<>();
         owners.add(Owner.builder().id(1L).build());
         owners.add(Owner.builder().id(2L).build());
-        // Con esto inicializamos un nuveoo contexto MVC. Important.
+        // Con esto inicializamos un nuevo contexto MVC. Important.
         mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
     }
 
@@ -56,6 +56,16 @@ class OwnerControllerTest {
         when(ownerService.findAll()).thenReturn(owners);
 
         mockMvc.perform(get("/owners/index"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("owners/index"))
+                .andExpect(model().attribute("owners", hasSize(2)));
+    }
+
+    @Test
+    void listOwnerByIndexHtml() throws Exception {
+        when(ownerService.findAll()).thenReturn(owners);
+
+        mockMvc.perform(get("/owners/index.html"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("owners/index"))
                 .andExpect(model().attribute("owners", hasSize(2)));
