@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/spring/pet-clinic
+    working_directory: ~/repo/pet-clinic
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - checkout:
-        path: ~/spring
+        path: ~/repo
 
       # Download and cache dependencies
       - restore_cache:
