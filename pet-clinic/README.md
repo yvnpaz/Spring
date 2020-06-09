@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/github/yvnpaz/Spring.svg?style=svg)](https://circleci.com/github/yvnpaz/Spring)
+[![CircleCI](https://circleci.com/gh/yvnpaz/Spring.svg?style=svg)](https://circleci.com/gh/yvnpaz/Spring)
 
 
 # Spring Framework Pet Clinic
