@@ -34,8 +34,8 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/pet-clinic/.m2
-          key: pet-clinic-{{ checksum "pom.xml" }}
+            - ~/.m2
+          key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
       - run: mvn install
